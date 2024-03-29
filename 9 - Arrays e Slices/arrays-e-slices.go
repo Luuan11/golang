@@ -42,4 +42,19 @@ func main() {
 
 	array2[1] = "posição alterada"
 	fmt.Println(slice2)
+
+	fmt.Println("--------------------")
+	//Arays Internos
+	//nesse caso, a função make cria um array interno de 12 posições, e retornou um array com 10 posições
+	slice3 := make([]float64, 10, 12) //se tentamos estourar essa capacidade o Go, irá dobrar a capacidade
+	fmt.Println(slice3)
+
+	slice3 = append(slice3, 5)
+	slice3 = append(slice3, 6)
+	slice3 = append(slice3, 7)
+
+	fmt.Println(len(slice3)) //tamanho 
+	fmt.Println(cap(slice3)) //capacidade 
+
+	//resumo, array uma lista de tamanho fixo, slice uma lista sem tamanho fixo
 }
