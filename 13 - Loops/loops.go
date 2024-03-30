@@ -42,7 +42,6 @@ func main() {
 	//navegando pelo Map
 	for chave, valor := range user {
 		fmt.Println(chave, valor)
-
 	}
 
 	type userStruct struct {
