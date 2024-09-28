@@ -11,11 +11,17 @@ func main() {
 
 	fmt.Println("after the function")
 
+	/*
 	for {
 		msg, open := <-canal
 		if !open {
 			break
 		}
+		fmt.Println(msg)
+	}
+	*/
+	
+	for msg := range canal {
 		fmt.Println(msg)
 	}
 	fmt.Println("end of the program")
