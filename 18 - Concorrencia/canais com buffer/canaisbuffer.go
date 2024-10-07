@@ -7,7 +7,10 @@ func main() {
 
 	canal <- "Olá Mundo!"
 	canal <- "Olá Go"
+	canal <- "Programando em Go"
 
 	msg := <-canal
+	msg2 := <-canal
 	fmt.Println(msg)
+	fmt.Println(msg2)
 }
