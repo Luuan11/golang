@@ -3,6 +3,9 @@
 Reposítorio voltado 100% a Golang, aqui você poderá ver diversas formas de utilizar Go em seu dia a dia!
 
 Obs: Certifique se de está na pasta correta antes de tentar rodar um dos arquivos, utilize:
+
+Nota que pode está bagunçado a ordem.
+
 cd ou cd ..
 
 ---
